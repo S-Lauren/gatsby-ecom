@@ -1,12 +1,7 @@
-import { Link, navigate } from 'gatsby';
+import { Link } from 'gatsby';
 import React from 'react'; 
-// import {Link} from 'gatsby'; 
- 
-const goToHomePage = () => {
-  setTimeout(() => {
-    navigate('/home')
-  }, 2000)
-}
+
+
 
 
 const Nav = () => {
