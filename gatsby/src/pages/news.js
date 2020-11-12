@@ -4,6 +4,7 @@ const News = () => {
   return (
     <>
       Hot new Kebab !
+      <button>Hello</button>
     </>
   );
 };
