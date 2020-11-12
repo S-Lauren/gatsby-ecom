@@ -1,5 +1,5 @@
 import React from 'react';
-import KebabIcon from "../assets/icons/kebab_icon.svg";
+import KebabIcon from "../assets/icons/kebab_icon.inline.svg";
 import styled  from 'styled-components';
 const IconContainer = styled.div`
   width: 100px; 

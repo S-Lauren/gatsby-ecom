@@ -1,5 +1,6 @@
 import {createGlobalStyle} from 'styled-components'; 
 
+
 const GlobalStyles = createGlobalStyle`
   :root {
     --red: #FF4949; 
@@ -10,6 +11,7 @@ const GlobalStyles = createGlobalStyle`
   }
   body {
     font-size: 25px; 
+
   }
   button {
     background: var(--red); 
