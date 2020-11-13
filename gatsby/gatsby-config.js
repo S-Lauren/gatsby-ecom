@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
+    title: `Kebab Ecommerce`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@gatsbyjs`,
   },
@@ -21,6 +21,20 @@ module.exports = {
           }
       }
   },
+  {
+    resolve: `gatsby-source-sanity`,
+    options: {
+      projectId: `wtaxs1u5`,
+      dataset: `production`,
+      // a token with read permissions is required
+      // if you have a private dataset
+      token: process.env.SANITY_TOKEN,
+      watchMode: true,
+      // If the Sanity GraphQL API was deployed using `--tag <name>`,
+      // use `graphqlTag` to specify the tag name. Defaults to `default`.
+      graphqlTag: 'default',
+    },
+  },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
@@ -35,6 +49,8 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+
+
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
